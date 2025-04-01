@@ -92,9 +92,7 @@
 
 <!-- animation -->
 <div id="narrativebox" class="ef1">
-  <div id="narbody">
-
-  </div>
+  <div id="narbody"></div>
   <div id="nextbtn"></div>
 </div>
 
@@ -120,18 +118,11 @@ app.loadSceneFile("./data/index/scene.js", function (scene) {
   // all relevant files have been loaded
 
   if (Q3D.Config.gui.customPlane) {
-    // specify preferred values. If not specified, z range of scene bounding box is used.
     var zMin = undefined,
         zMax = undefined;
     gui.dat.initCustomPlaneFolder(zMin, zMax);
   }
 });
 </script>
-  <script>
-  loadScene("./data/index/scene.js");
-</script>
-</body>
-</html>
-
 </body>
 </html>
